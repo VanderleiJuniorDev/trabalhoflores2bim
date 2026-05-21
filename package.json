@@ -1,0 +1,18 @@
+{
+  "name": "trabalhoflores2bim",
+  "version": "1.0.0",
+  "description": "Trabalho Prático 1 - Programação Front-End (ADS3B) - 18 exercícios em TypeScript",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "build": "tsc",
+    "serve": "node dist/main.js"
+  },
+  "author": "ADS3B",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
