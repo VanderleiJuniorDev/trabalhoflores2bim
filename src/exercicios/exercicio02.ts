@@ -19,3 +19,30 @@ Descritivo: Escreva um programa que leia um número inteiro e informe se ele é 
 export async function exercicio02(): Promise<void> {
   console.log("Exercício ainda não implementado.");
 }
+import * as readline from "readline";
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+function verificarParOuImpar(): void {
+  console.log("EXERCÍCIO 2");
+
+  rl.question("Digite um número inteiro: ", (input: string) => {
+    const numero: number = parseInt(input, 10);
+
+    if (isNaN(numero)) {
+      console.log("Entrada inválida. Por favor, digite um número inteiro.");
+    } else {
+      const resultado: string = numero % 2 === 0 ? "PAR" : "ÍMPAR";
+      console.log(`Resultado: O número ${numero} é ${resultado}.`);
+    }
+
+    rl.question("\nPressione Enter para continuar...", () => {
+      rl.close();
+    });
+  });
+}
+
+verificarParOuImpar();
