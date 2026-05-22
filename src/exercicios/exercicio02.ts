@@ -13,36 +13,11 @@ Data: 21 de Maio de 2026
 Descritivo: Escreva um programa que leia um número inteiro e informe se ele é par ou ímpar.
 *******************************************************************************/
 
-// Explicação: Este exercício lê um número inteiro do usuário e informa se o
-// número é par ou ímpar. A implementação será desenvolvida pelo grupo.
+import { perguntarNumero } from "../utils/input";
 
 export async function exercicio02(): Promise<void> {
-  console.log("Exercício ainda não implementado.");
+  const numero = await perguntarNumero("Digite um numero inteiro: ");
+  const resultado = numero % 2 === 0 ? "PAR" : "IMPAR";
+
+  console.log(`Resultado: O numero ${numero} e ${resultado}.`);
 }
-import * as readline from "readline";
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-
-function verificarParOuImpar(): void {
-  console.log("EXERCÍCIO 2");
-
-  rl.question("Digite um número inteiro: ", (input: string) => {
-    const numero: number = parseInt(input, 10);
-
-    if (isNaN(numero)) {
-      console.log("Entrada inválida. Por favor, digite um número inteiro.");
-    } else {
-      const resultado: string = numero % 2 === 0 ? "PAR" : "ÍMPAR";
-      console.log(`Resultado: O número ${numero} é ${resultado}.`);
-    }
-
-    rl.question("\nPressione Enter para continuar...", () => {
-      rl.close();
-    });
-  });
-}
-
-verificarParOuImpar();
