@@ -189,8 +189,8 @@ Disciplina: Programação Front-End
 Professor: José Carlos Flores
 Turma: ADS3B
 Componentes:
-    25004000-1 - Nome do Aluno 1
-    25004001-2 - Nome do Aluno 2
+    25036114-2 - Vanderlei Oliveira Junior
+    25355474-2 - Silvia de Oliveira
     25004001-3 - Nome do Aluno 3
     25004001-4 - Nome do Aluno 4
     25004001-5 - Nome do Aluno 5
@@ -216,8 +216,8 @@ Além disso, cada arquivo inclui um comentário explicativo descrevendo como o c
 
 | RA          | Nome                       |
 | ----------- | -------------------------- |
-| 25004000-1  | Nome do Aluno 1            |
-| 25004001-2  | Nome do Aluno 2            |
+| 25036114-2  | Vanderlei Oliveira         |
+| 25355474-2  | Silvia de Oliveira         |
 | 25004001-3  | Nome do Aluno 3            |
 | 25004001-4  | Nome do Aluno 4            |
 | 25004001-5  | Nome do Aluno 5            |
